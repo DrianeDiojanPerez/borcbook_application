@@ -1,6 +1,6 @@
 
 import { LockClosedIcon } from '@heroicons/react/20/solid'
-import Link from 'next-link'
+import Link from 'next/link'
 
 export default function Example() {
   return (
@@ -18,7 +18,7 @@ export default function Example() {
             </h2>
             <p className="mt-2 text-center text-sm text-gray-600">
               Or{' '}
-              <Link href="#" className="font-medium text-sky-800 hover:text-sky-700">
+              <Link href="signup" className="font-medium text-sky-800 hover:text-sky-700">
                 sign up
               </Link>
             </p>
