@@ -1,10 +1,30 @@
-
+/*
+  This example requires some changes to your config:
+  
+  ```
+  // tailwind.config.js
+  module.exports = {
+    // ...
+    plugins: [
+      // ...
+      require('@tailwindcss/forms'),
+    ],
+  }
+  ```
+*/
 import { LockClosedIcon } from '@heroicons/react/20/solid'
-import Link from 'next-link'
 
 export default function Example() {
   return (
     <>
+      {/*
+        This example requires updating your template:
+
+        ```
+        <html class="h-full bg-gray-50">
+        <body class="h-full">
+        ```
+      */}
       <div className="flex min-h-full items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
         <div className="w-full max-w-md space-y-8">
           <div>
@@ -18,9 +38,9 @@ export default function Example() {
             </h2>
             <p className="mt-2 text-center text-sm text-gray-600">
               Or{' '}
-              <Link href="#" className="font-medium text-sky-800 hover:text-sky-700">
+              <a href="#" className="font-medium text-sky-800 hover:text-sky-700">
                 sign up
-              </Link>
+              </a>
             </p>
           </div>
           <form className="mt-8 space-y-6" action="#" method="POST">
